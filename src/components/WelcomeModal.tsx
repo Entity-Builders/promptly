@@ -1,5 +1,13 @@
 import React from 'react';
-import { Globe, Zap, ExternalLink, Sparkles } from 'lucide-react';
+import {
+  Globe,
+  Zap,
+  ExternalLink,
+  Sparkles,
+  Languages,
+  FileText,
+  Mail,
+} from 'lucide-react';
 
 interface WelcomeModalProps {
   onDismiss: () => void;
@@ -14,7 +22,7 @@ export const WelcomeModal: React.FC<WelcomeModalProps> = ({
     <div className='fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 animate-in fade-in duration-300'>
       <div className='bg-white rounded-3xl p-8 w-[480px] shadow-2xl animate-in zoom-in-95 duration-300 max-h-[90vh] overflow-y-auto'>
         {/* Header */}
-        <div className='text-center mb-8'>
+        <div className='text-center mb-6'>
           <div className='inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-500 rounded-2xl mb-4 shadow-lg'>
             <Sparkles size={32} className='text-white' />
           </div>
@@ -22,12 +30,57 @@ export const WelcomeModal: React.FC<WelcomeModalProps> = ({
             Welcome to Promptly
           </h2>
           <p className='text-gray-500 text-sm'>
-            Build, test, and iterate on AI prompts — faster.
+            Your AI-powered text toolkit. Pick a recipe, paste your text, get
+            instant results.
           </p>
         </div>
 
+        {/* What Promptly Does */}
+        <div className='space-y-3 mb-6'>
+          <h3 className='text-xs font-semibold text-gray-400 uppercase tracking-wider'>
+            What you can do
+          </h3>
+          <div className='grid grid-cols-3 gap-2'>
+            <div className='bg-gray-50 rounded-xl p-3 border border-gray-100 text-center'>
+              <div className='flex items-center justify-center mb-2'>
+                <div className='p-1.5 bg-blue-100 rounded-lg'>
+                  <Languages size={16} className='text-blue-600' />
+                </div>
+              </div>
+              <span className='text-xs font-medium text-gray-700'>
+                Translate
+              </span>
+              <p className='text-[10px] text-gray-400 mt-0.5'>
+                ES → EN instantly
+              </p>
+            </div>
+            <div className='bg-gray-50 rounded-xl p-3 border border-gray-100 text-center'>
+              <div className='flex items-center justify-center mb-2'>
+                <div className='p-1.5 bg-purple-100 rounded-lg'>
+                  <FileText size={16} className='text-purple-600' />
+                </div>
+              </div>
+              <span className='text-xs font-medium text-gray-700'>Format</span>
+              <p className='text-[10px] text-gray-400 mt-0.5'>
+                PRs, docs, notes
+              </p>
+            </div>
+            <div className='bg-gray-50 rounded-xl p-3 border border-gray-100 text-center'>
+              <div className='flex items-center justify-center mb-2'>
+                <div className='p-1.5 bg-green-100 rounded-lg'>
+                  <Mail size={16} className='text-green-600' />
+                </div>
+              </div>
+              <span className='text-xs font-medium text-gray-700'>Write</span>
+              <p className='text-[10px] text-gray-400 mt-0.5'>
+                Emails, posts, more
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Two Modes */}
-        <div className='space-y-3 mb-8'>
+        <div className='space-y-3 mb-6'>
           <h3 className='text-xs font-semibold text-gray-400 uppercase tracking-wider'>
             Two ways to use Gemini
           </h3>
@@ -66,30 +119,30 @@ export const WelcomeModal: React.FC<WelcomeModalProps> = ({
         </div>
 
         {/* Quick Tips */}
-        <div className='bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-4 mb-8 border border-purple-100/50'>
+        <div className='bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-4 mb-6 border border-purple-100/50'>
           <h3 className='text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3'>
-            Quick tips
+            How it works
           </h3>
           <ul className='space-y-2 text-sm text-gray-600'>
             <li className='flex items-start gap-2'>
-              <span className='text-purple-500 font-bold mt-0.5'>→</span>
+              <span className='text-purple-500 font-bold mt-0.5'>1.</span>
               <span>
-                Pick a <strong>Recipe</strong> from the sidebar to set your AI's
-                behavior
+                Pick a <strong>Recipe</strong> from the sidebar (translator,
+                summarizer, etc.)
               </span>
             </li>
             <li className='flex items-start gap-2'>
-              <span className='text-purple-500 font-bold mt-0.5'>→</span>
+              <span className='text-purple-500 font-bold mt-0.5'>2.</span>
               <span>
-                Create <strong>custom recipes</strong> with the{' '}
+                Paste your text and hit send — the recipe transforms it
+                instantly
+              </span>
+            </li>
+            <li className='flex items-start gap-2'>
+              <span className='text-purple-500 font-bold mt-0.5'>3.</span>
+              <span>
+                Create your own <strong>custom recipes</strong> with the{' '}
                 <strong>+</strong> button
-              </span>
-            </li>
-            <li className='flex items-start gap-2'>
-              <span className='text-purple-500 font-bold mt-0.5'>→</span>
-              <span>
-                Adjust <strong>Tone</strong> and <strong>Length</strong> to
-                fine-tune responses
               </span>
             </li>
           </ul>
