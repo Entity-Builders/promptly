@@ -1,3 +1,20 @@
+---
+name: 'Promptly'
+tagline: 'Your AI-powered text toolkit — prompt recipes for Gemini'
+platform: 'macOS'
+status: 'active'
+category: 'developer-tools'
+icon: '⚡'
+features:
+  - 'Reusable prompt recipes'
+  - 'System instruction support'
+  - 'Multi-turn chat conversations'
+  - 'Gemini web wrapper integration'
+  - 'Auto-updates via GitHub Releases'
+downloadUrl: ''
+visible: true
+---
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -22,7 +39,7 @@ export default {
     project: ['./tsconfig.json', './tsconfig.node.json'],
     tsconfigRootDir: __dirname,
   },
-}
+};
 ```
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
