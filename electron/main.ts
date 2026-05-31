@@ -104,7 +104,7 @@ app.whenReady().then(() => {
 
         const genAI = new GoogleGenerativeAI(apiKey);
         const modelCallback = {
-          model: modelName || 'gemini-2.0-flash-001',
+          model: modelName || 'gemini-2.5-flash',
           systemInstruction: systemInstruction
             ? { role: 'system', parts: [{ text: systemInstruction }] }
             : undefined,

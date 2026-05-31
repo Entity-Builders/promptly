@@ -27,7 +27,7 @@ function App() {
   const [lastPrompt, setLastPrompt] = useState('');
   const [response, setResponse] = useState('');
   const [loading, setLoading] = useState(false);
-  const [model, setModel] = useState('gemini-2.0-flash');
+  const [model, setModel] = useState('gemini-2.5-flash');
   const [length, setLength] = useState('auto');
   const [tone, setTone] = useState('auto');
 
@@ -437,9 +437,9 @@ function App() {
                   }}
                   className='w-full px-4 py-2 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none bg-white text-gray-900 transition-all'
                 >
-                  <option value='gemini-2.0-flash'>Gemini 2.0 Flash</option>
-                  <option value='gemini-2.0-flash-lite'>
-                    Gemini 2.0 Flash Lite
+                  <option value='gemini-2.5-flash'>Gemini 2.5 Flash</option>
+                  <option value='gemini-2.5-flash-lite'>
+                    Gemini 2.5 Flash Lite
                   </option>
                   <option value='gemini-2.5-pro'>Gemini 2.5 Pro</option>
                 </select>
