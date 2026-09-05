@@ -7,7 +7,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/juanobrach/entity-builders.git"
+    "url": "https://github.com/Entity-Builders/promptly.git"
   },
   "scripts": {
     "dev": "vite",
@@ -24,7 +24,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@entity-builders/analytics": "1.0.0",
+    "@entity-builders/analytics": "^1.0.0",
     "@google/generative-ai": "^0.24.1",
     "electron-log": "^5.4.3",
     "electron-updater": "^6.7.3",
@@ -89,5 +89,6 @@
       "dist",
       "dist-electron"
     ]
-  }
+  },
+  "packageManager": "yarn@4.13.0"
 }
