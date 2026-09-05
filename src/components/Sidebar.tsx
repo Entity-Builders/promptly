@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import type { Analytics } from '@eb-packages/analytics';
+import type { Analytics } from '@entity-builders/analytics';
 import {
   Plus,
   RefreshCw,

@@ -13,7 +13,7 @@ import {
   Key,
 } from 'lucide-react';
 import Markdown from 'react-markdown';
-import type { Analytics } from '@eb-packages/analytics';
+import type { Analytics } from '@entity-builders/analytics';
 
 interface MainContentProps {
   recipeName: string;
